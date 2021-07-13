@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: #080808;
+        }
+        body{
+            font-family: arial;
+            background: url("img/background.webp");
+            background-size: 100%;
+        }
+        ul{
+            list-style: none;
+            top:70px;
+            width: 100%;
+            position: absolute;
+        }
+        img{
+            width: 40px;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ nav
+        {
+            transform: translateX(350px);
+        }
+        nav{
+            background-color: rgba(16,16,16,.5);
+            width: 350px;
+            height: 100vh;
+            left: -350px;
+            position: absolute;
+            transition: all .5s;
+            
+        }
+        
+        a{
+            
+            display: block;
+            padding: 20px 5px;
+            color: #ffffff;
+
+        }
+        a:hover{
+            background-color: rgba(176,224,230);
+            color: #333333;
+        }
+        label{
+            padding: 15px;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+
+
+    <title>Folha de Estilo - CSS</title>
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="chec">
+    <label for="chec">
+
+        <img src="img/botao.png" alt="">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="">Novidades</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">Tutoriais</a></li>
+            <li><a href="">Semana Cultural</a></li>
+            <li><a href="">SENAI</a></li>
+
+        </ul>
+    </nav>
+
+</body>
+
+</html>
